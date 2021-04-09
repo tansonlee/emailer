@@ -19,7 +19,7 @@ router.post("/", (req, res) => {
 	const { subject, body } = req.body;
 	console.log(req.body);
 	sendEmail(`PERSONAL WEBSITE ${subject}`, `BODY:\n${body}`);
-	res.status(201).send({ status: "success" });
+	res.status(201).send({ status: "success", body: body, subject: subject });
 });
 
 router.get("/", (req, res) => {
