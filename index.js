@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
 router.get("/", (req, res) => {
 	console.log("here");
 	res.send({
-		val1: "value",
+		testStatus: "success",
 	});
 	// sendEmail("hello", "body");
 });
